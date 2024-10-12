@@ -9,11 +9,15 @@ const LoginForm = () => {
     e.preventDefault();
   };
   return (
-    <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
+    <form
+      className="flex flex-col items-center space-y-4 md:space-y-6"
+      onSubmit={handleSubmit}
+    >
       <Input
         label="Username"
         name="username"
         onChange={(e) => setUsername(e.target.value)}
+        icon="../../components/UserIcon/user.svg"
       />
       <Input
         label="Password"
