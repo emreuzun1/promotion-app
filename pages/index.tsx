@@ -1,9 +1,11 @@
 import LoginForm from '@/components/LoginForm';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <LoginForm />
     </div>
   );
-}
+};
+
+export default Home;

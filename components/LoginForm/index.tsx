@@ -14,11 +14,13 @@ const LoginForm = () => {
       onSubmit={handleSubmit}
     >
       <Input
+        data-testid="username"
         placeholder="Username"
         name="username"
         onChange={(e) => setUsername(e.target.value)}
       />
       <Input
+        data-testid="password"
         placeholder="Password"
         type="password"
         name="password"
