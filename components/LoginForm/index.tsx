@@ -14,13 +14,12 @@ const LoginForm = () => {
       onSubmit={handleSubmit}
     >
       <Input
-        label="Username"
+        placeholder="Username"
         name="username"
         onChange={(e) => setUsername(e.target.value)}
-        icon="../../components/UserIcon/user.svg"
       />
       <Input
-        label="Password"
+        placeholder="Password"
         type="password"
         name="password"
         onChange={(e) => setPassword(e.target.value)}
